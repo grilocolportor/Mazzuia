@@ -1,0 +1,33 @@
+<!-- Generated template for the BottombarComponent component -->
+<div>
+ <!--    create a footbar  -->
+ <ion-grid>
+    <ion-row>
+        <ion-col class="col-footbar">
+            <button ion-button mode="ios" outline="true" class="button-footbar">
+                <img src="{{imageButton1}}" class="img-footbar">
+            </button>
+        </ion-col>
+        <ion-col class="col-footbar">
+            <button ion-button mode="ios" outline="true" class="button-footbar" (click)="priceCheck()">
+                <img src="assets/img/home/checkPrice.png" class="img-footbar">
+            </button>
+        </ion-col>
+        <ion-col class="col-footbar">
+            <button ion-button mode="ios" outline="true" class="button-footbar" (click)="goClickAndGo()">
+                <img src="assets/img/home/clickgo.png" class="img-footbar">
+            </button>
+        </ion-col>
+        <ion-col class="col-footbar">
+            <button ion-button mode="ios" outline="true" class="button-footbar" (click)="goBeMembership()">
+                <img src="assets/img/home/add.png" class="img-footbar">
+            </button>
+        </ion-col>
+        <ion-col class="col-footbar">
+            <button ion-button mode="ios" outline="true" class="button-footbar" (click)="goMembershipCard()">
+                <img src="assets/img/home/membershipeCard.png" class="img-footbar">
+            </button>
+        </ion-col>
+    </ion-row>
+</ion-grid>
+</div>

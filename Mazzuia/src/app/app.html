@@ -1,1 +1,7 @@
 <ion-nav [root]="rootPage"></ion-nav>
+<!--    create a footbar  -->
+<ion-footer id="footoolbar" no-border class="foot-bar">
+    <ion-toolbar color="primary">
+        <bottombar #bottomBar imageButton1="assets/img/home/checkPrice.png" (click)="goto($event)" ></bottombar>
+    </ion-toolbar>
+</ion-footer>
