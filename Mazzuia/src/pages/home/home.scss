@@ -1,15 +1,14 @@
 page-home {
    
-
-    .masters {
-        background-color: #3856C1;
+    ion-content {
+        background-image: url('assets/imgs/fundo-azul.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         vertical-align: middle !important;
-
     }
 
     .button-principal {
-        background-color: red;
-      
+        background-color: red;      
     }
 
     .vertical-center-align {

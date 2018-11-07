@@ -11,8 +11,52 @@
   </ion-navbar>
 
 </ion-header>
-
+    
 
 <ion-content padding>
+  <ion-grid>    
+    <ion-row>
+      <ion-col text-center>
+          <img src="assets/imgs/logo.png">
+          <ion-item>
+            <h1>Estatísticas</h1>
+          </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-2>
+        <img src="assets/icon/favicon.ico">
+      </ion-col>
+      <ion-col col-8>
+        <button ion-item (click)="callPartidasPage()"> 
+          Partidas
+        </button> 
+      </ion-col>
+      <ion-icon col-2>
 
+      </ion-icon>
+    </ion-row>
+    <ion-row>
+        <ion-col col-2>
+          <img src="assets/icon/favicon.ico">
+        </ion-col>
+        <ion-col col-8>
+          <h2>Jogadores</h2>
+        </ion-col>
+        <ion-icon col-2>
+          
+        </ion-icon>
+    </ion-row>
+    <ion-row>
+        <ion-col col-2>
+          <img src="assets/icon/favicon.ico">
+        </ion-col>
+        <ion-col col-8>
+          <h2>times</h2>
+        </ion-col>
+        <ion-icon col-2>
+          
+        </ion-icon>
+      </ion-row>
+  </ion-grid>
 </ion-content>

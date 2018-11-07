@@ -4,10 +4,10 @@ import { EstatisticaPage } from './estatistica';
 
 @NgModule({
   declarations: [
-    EstatisticaPage,
+    EstatisticaPage
   ],
   imports: [
-    IonicPageModule.forChild(EstatisticaPage),
+    IonicPageModule.forChild(EstatisticaPage)
   ],
 })
 export class EstatisticaPageModule {}
