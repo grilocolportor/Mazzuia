@@ -1,0 +1,7 @@
+{
+  "name": "Mazzuia",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
