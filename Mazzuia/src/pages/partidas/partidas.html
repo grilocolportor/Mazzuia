@@ -14,22 +14,54 @@
 
 
 <ion-content padding>
-
   <ion-list>
-    <ion-item *ngFor="let item of partidas">
-      <ion-grid>
-        <ion-row>
-          <ion-col col-2>
-            <img src="">
-          </ion-col>
-          <ion-col col-10>
-            {{item.nome}}
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-item> 
+  
+    <ion-card *ngFor="let item of partidas">
+
+      <ion-card-header>
+        <h1>{{ item.partida.nome }}</h1>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p>{{ item.partida.apelido }}</p>
+      </ion-card-content>
+
+      <ion-card-content>
+        <p>{{ item.partida.cidade }}</p>
+      </ion-card-content>
+
+      <ion-card-content>
+        <p>{{ item.partida.pais }}</p>
+      </ion-card-content>
+      
+
+      <ion-row text-center>
+        <ion-col>
+          <button ion-button icon-left clear small (click)="editContact(item);">
+            <ion-icon name="create"></ion-icon>
+            <div>Editar</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-left clear small (click)="removeContact(item);">
+            <ion-icon name="trash"></ion-icon>
+            <div>Excluir</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <a href="tel:{{ item.partida.pais }}" ion-button icon-left clear small>
+            <ion-icon name="call"></ion-icon>
+            <div>Ligar</div>
+          </a>
+        </ion-col>
+      </ion-row>
+
+    </ion-card>
   </ion-list>
 
-    <button right ion-fab  color="danger" (click)="callAddTime()"><ion-icon name="add"></ion-icon></button>   
- 
+  <ion-fab right bottom>
+    <button ion-fab color="primary" (click)="addContact()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
 </ion-content>

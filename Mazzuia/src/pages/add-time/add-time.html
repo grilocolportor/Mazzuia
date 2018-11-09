@@ -15,7 +15,7 @@
 
 <ion-content padding>
 
-  <ion-grid>
+<!--  <ion-grid>
     <ion-row>
       <ion-col text-center>
         <img src="">
@@ -30,6 +30,35 @@
          
       </ion-col>
     </ion-row>
-  </ion-grid>
+  </ion-grid> -->
+
+  <ion-list>
+    <ion-item>
+      
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Nome</ion-label>
+      <ion-input type="text" name="name" [(ngModel)]="nome"></ion-input>
+    </ion-item>
+ 
+    <ion-item>
+      <ion-label stacked>Apelido</ion-label>
+      <ion-input type="text" name="phone" [(ngModel)]="partida.apelido"></ion-input>
+    </ion-item>
+ 
+    <ion-item>
+      <ion-label stacked>Cidade</ion-label>
+      <ion-input type="text" name="birth" [(ngModel)]="partida.cidade"></ion-input>
+    </ion-item>
+ 
+    <ion-item>
+      <ion-label stacked>País</ion-label>
+      <ion-input type="text" name="birth" [(ngModel)]="partida.pais"></ion-input>
+    </ion-item>
+ 
+  </ion-list>
+ 
+  <button ion-button block (click)="save()">Salvar</button>
+ 
 
 </ion-content>
